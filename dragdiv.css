@@ -1,0 +1,9 @@
+.Draggable-DIV{
+  border: 0;
+  position: absolute;
+  text-align: center;
+}
+.Draggable-DIV-header{
+  border: 7px solid #d3d3d3;
+  cursor: move;
+}

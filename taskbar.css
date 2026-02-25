@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  margin: 0;
+  font-family: Segoe UI, Tahoma, Geneva, sans-serif;
+  background-color: #0078D7; /* Windows blue background */
+}
+
+#taskbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to top, #5b7375, #2b2b2b);
+  border-top: 1px solid #1a1a1a;
+  height: 40px;
+  padding: 0 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.taskbar-item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.taskbar-item:hover {
+  background: linear-gradient(to top, #6a6a6a, #4c4c4c);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.8);
+}
+
+#start-button {
+  background: linear-gradient(to bottom, #0078D7, #005a9e);
+  border: 1px solid #004080;
+  padding: 5px 10px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3),
+              inset 0 1px 2px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+.hi-my-name-is-what{
+  position: absolute;;
+}
+#start-button img {
+  width: 20px;
+}
+
+#start-button:hover {
+  background: linear-gradient(to bottom, #009cff, #006fbd);
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.4),
+              inset 0 1px 2px rgba(0, 0, 0, 0.5),
+              0 0 5px rgba(0, 128, 255, 0.8);
+}
+
+#taskbar-apps {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+
+.taskbar-item img {
+  width: 24px;
+  height: 24px;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.5));
+}
+
+.taskbar-item.active {
+  background: linear-gradient(to top, #4c4c4c, #6a6a6a);
+  box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.4), 
+              inset 0 -1px 1px rgba(0, 0, 0, 0.7);
+}
+
+#clock {
+  font-size: 14px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+#start-menu {
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  width: 250px;
+  background: linear-gradient(to bottom, #1f1f1f, #333333);
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+  border: 1px solid #1a1a1a;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 1000;
+  animation: slide-in 0.2s ease-out;
+}
+
+#start-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#start-menu li {
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background 0.3s ease;
+}
+
+#start-menu li:hover {
+  background: linear-gradient(to bottom, #4c4c4c, #6a6a6a);
+}
+
+/* Start Menu Hidden */
+.thidden {
+  display: none;
+}
+
+/* Programs Div Hidden */
+.phidden {
+  display: none;
+}
+
+/* You can add styles for visibility too if needed */
+.thidden.show,
+.phidden.show {
+  display: block;
+}
+
+/* Animations */
+@keyframes slide-in {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    
+  }
+}
+#Programs {
+  opacity: 1;
+  font-size: 3;
+  font-family: "Sour Gummy", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
